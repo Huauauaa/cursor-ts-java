@@ -15,6 +15,7 @@
 .
 ├── backend                    # Spring Boot 后端
 ├── frontend                   # React 前端
+├── scripts                    # 启动脚本
 └── docker-compose.yml         # 本地 MySQL
 ```
 
@@ -26,6 +27,12 @@
 
 ```bash
 docker compose up -d
+```
+
+或使用脚本：
+
+```bash
+bash scripts/start-mysql.sh
 ```
 
 默认数据库信息：
@@ -43,6 +50,12 @@ docker compose up -d
 ```bash
 cd backend
 ./mvnw spring-boot:run
+```
+
+或使用脚本：
+
+```bash
+bash scripts/start-backend.sh
 ```
 
 后端默认端口：`8080`
@@ -72,6 +85,12 @@ cd backend
 cd frontend
 npm install
 npm run dev
+```
+
+或使用脚本：
+
+```bash
+bash scripts/start-frontend.sh
 ```
 
 前端默认端口：`5173`
